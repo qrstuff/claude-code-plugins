@@ -1,0 +1,14 @@
+{
+  "name": "qrstuff-cc-plugins",
+  "owner": {
+    "name": "QRStuff Team",
+    "email": "engineering@qrstuff.com"
+  },
+  "plugins": [
+    {
+      "name": "qrstuff-mcp-server",
+      "source": "./plugins/qrstuff-mcp-server",
+      "description": "Adds a MCP server for the QRStuff platform"
+    }
+  ]
+}
