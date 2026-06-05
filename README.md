@@ -47,9 +47,44 @@ claude plugin install qrstuff-mcp-server@qrstuff-cc-plugins
 > claude plugin marketplace add https://github.com/qrstuff/claude-code-plugins.git
 > ```
 
+````
+
+## Claude Desktop Installation
+
+For **Claude Desktop**, you can install the MCP server using either the new one-click Desktop Extension package or manually editing your configuration file.
+
+### Option A: Desktop Extension Bundle (`.mcpb` - Recommended)
+
+1. Package the extension manifest:
+   ```bash
+   cd plugins/qrstuff-mcp-server/desktop
+   zip -r qrstuff.mcpb manifest.json
+````
+
+2. Open **Claude Desktop**.
+3. Go to **Settings > Extensions > Advanced settings > Install Extension...** and select the generated `qrstuff.mcpb` file.
+
+### Option B: Manual Configuration
+
+1. Open your Claude Desktop configuration file:
+   - **macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
+   - **Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
+   - **Linux:** `~/.config/Claude/claude_desktop_config.json`
+
+2. Add the `qrstuff` server definition to the `mcpServers` block:
+   ```json
+   {
+     "mcpServers": {
+       "qrstuff": {
+         "url": "https://mcp.qrstuff.ai/mcp"
+       }
+     }
+   }
+   ```
+
 ## Usage
 
-Once the plugin is installed, the QRStuff MCP server is available to Claude automatically. Start (or restart) a Claude Code session and the `qrstuff` MCP server will be connected.
+Once the plugin or extension is installed, the QRStuff MCP server is available to Claude automatically. Start (or restart) a Claude session and the `qrstuff` MCP server will be connected.
 
 You can then ask Claude to use QRStuff in natural language, for example:
 
