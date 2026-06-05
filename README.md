@@ -6,8 +6,8 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-market
 
 This repository is a Claude Code marketplace (`qrstuff-cc-plugins`) that distributes a single plugin:
 
-| Plugin | Description |
-| :----- | :---------- |
+| Plugin               | Description                                                                                                                                                      |
+| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `qrstuff-mcp-server` | Adds the QRStuff [MCP server](https://mcp.qrstuff.ai/mcp) to Claude Code, giving Claude access to the QRStuff platform for QR code generation and related tools. |
 
 When you install the plugin, Claude Code registers the remote MCP server at `https://mcp.qrstuff.ai/mcp` for you.

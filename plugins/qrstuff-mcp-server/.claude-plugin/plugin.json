@@ -2,6 +2,7 @@
   "name": "qrstuff-mcp-server",
   "version": "1.0.0",
   "description": "Adds a MCP server for the QRStuff platform",
+  "skills": "./skills/",
   "author": {
     "name": "QRStuff Team",
     "email": "engineering@qrstuff.com"
