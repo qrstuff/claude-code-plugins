@@ -1,0 +1,12 @@
+{
+  "manifest_version": "0.4",
+  "name": "qrstuff-mcp-server",
+  "version": "1.0.0",
+  "display_name": "QRStuff MCP Server",
+  "description": "Adds a MCP server for the QRStuff platform to generate QR codes and view scan analytics",
+  "author": "QRStuff Team <engineering@qrstuff.com>",
+  "server": {
+    "type": "http",
+    "url": "https://mcp.qrstuff.ai/mcp"
+  }
+}
