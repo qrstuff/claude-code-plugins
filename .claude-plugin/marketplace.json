@@ -4,6 +4,7 @@
     "name": "QRStuff Team",
     "email": "engineering@qrstuff.com"
   },
+  "description": "Official marketplace for QRStuff AI agent plugins and MCP servers",
   "plugins": [
     {
       "name": "qrstuff-mcp-server",
